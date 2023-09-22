@@ -1,5 +1,5 @@
 import React from 'react';
-import { WeatherApiResponse } from './IWeatherApiResponse';
+import { WeatherApiResponse } from '../models/IWeatherApiResponse';
 
 interface HistoryProps {
   historyData: WeatherApiResponse[];

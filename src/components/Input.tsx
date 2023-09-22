@@ -1,6 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Input = ({ placeholder, value, name, onChange, required = false }) => {
+interface InputProps {
+  placeholder: string;
+  value: string;
+  name: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  required?: boolean;
+}
+
+const Input: React.FC<InputProps> = ({ placeholder, value, name, onChange, required = false }) => {
   return (
     <div className='m-4'>
       <label htmlFor='value' className='text-gray-500 text-sm'>

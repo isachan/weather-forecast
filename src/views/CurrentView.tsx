@@ -1,5 +1,5 @@
 import React from 'react';
-import { IWeatherEntry } from './IWeatherEntry';
+import { IWeatherEntry } from '../models/IWeatherEntry';
 
 interface CurrentViewProps {
   data: IWeatherEntry | null;

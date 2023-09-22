@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './App.css';
 
-import Search from './Search';
-import History from './History';
-import CurrentView from './CurrentView';
-import Modal from './Modal';
-import Loader from './Loader';
+import Search from './views/Search';
+import History from './views/History';
+import CurrentView from './views/CurrentView';
+import Modal from './components/Modal';
+import Loader from './components/Loader';
 
-import { IWeatherEntry } from './IWeatherEntry';
-import { WeatherApiResponse } from './IWeatherApiResponse';
+import { IWeatherEntry } from './models/IWeatherEntry';
+import { WeatherApiResponse } from './models/IWeatherApiResponse';
 
 const App = () => {
   const [historyList, setHistoryList] = useState<WeatherApiResponse[]>([]);
